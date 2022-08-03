@@ -78,8 +78,34 @@ h5 {
 /* end MAIN */
 
 /* HOMEPAGE */
-.parallax {
-  min-height: 2000px;
+.gradient-background {
+  background: rgb(50, 106, 212);
+  background: -moz-linear-gradient(
+    124deg,
+    rgba(50, 106, 212, 1) 6%,
+    rgba(117, 196, 158, 1) 81%
+  );
+  background: -webkit-linear-gradient(
+    124deg,
+    rgba(50, 106, 212, 1) 6%,
+    rgba(117, 196, 158, 1) 81%
+  );
+  background: linear-gradient(
+    124deg,
+    rgba(50, 106, 212, 1) 6%,
+    rgba(117, 196, 158, 1) 81%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#326ad4",endColorstr="#75c49e",GradientType=1);
+}
+.align-top {
+  align-self: flex-start;
+}
+@media screen and (max-width: 1023px) {
+  .hero.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
 .hero h1 {
   font-size: 2.67rem;
